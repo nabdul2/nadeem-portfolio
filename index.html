@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nadeem Abdul · Health Informatics Portfolio</title>
+  <meta name="description" content="Portfolio of Nadeem Abdul — Health Informatics graduate and data analyst specializing in healthcare data, interoperability, and analytics." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0f172a; /* slate-900 */
+      --muted: #475569; /* slate-600 */
+      --accent: #2563eb; /* blue-600 */
+      --card: #f8fafc; /* slate-50 */
+      --border: #e2e8f0; /* slate-200 */
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 1100px; padding: 0 1.25rem; margin: 0 auto; }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(10px);
+      background: color-mix(in srgb, var(--bg) 85%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+    nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { font-weight: 700; letter-spacing: 0.2px; }
+    .nav-links a { color: var(--muted); text-decoration: none; margin-left: 1rem; font-weight: 500; }
+    .nav-links a:hover { color: var(--fg); }
+
+    .hero { padding: 4rem 0 2rem; }
+    .kicker { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: .85rem; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; margin: .5rem 0 1rem; }
+    .lead { color: var(--muted); font-size: 1.1rem; max-width: 70ch; }
+    .cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
+    .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .7rem 1rem; border-radius: .8rem; border: 1px solid var(--border); text-decoration: none; font-weight: 600; }
+    .btn.primary { background: var(--accent); color: white; border-color: var(--accent); }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px color-mix(in srgb, var(--accent) 15%, transparent); }
+
+    section { padding: 2.25rem 0; }
+    section .section-title { font-size: 1.5rem; margin: 0 0 1rem; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; gap: 1rem; }
+    .grid.cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .grid.cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width: 900px) { .grid.cols-2, .grid.cols-3 { grid-template-columns: 1fr; } }
+
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; padding: 1.25rem; }
+    .card h3 { margin: 0 0 .25rem; font-size: 1.05rem; }
+    .badge { display: inline-block; border: 1px solid var(--border); background: white; padding: .25rem .5rem; border-radius: 999px; font-size: .8rem; color: var(--muted); }
+    .meta { font-size: .9rem; color: var(--muted); }
+    ul.clean { margin: .5rem 0 0 1.25rem; }
+
+    .timeline { position: relative; }
+    .timeline::before { content: ""; position: absolute; left: 10px; top: .25rem; bottom: .25rem; width: 2px; background: var(--border); }
+    .item { position: relative; padding-left: 2.5rem; margin: 1.25rem 0; }
+    .dot { position: absolute; left: 4px; top: .4rem; width: 12px; height: 12px; background: var(--accent); border-radius: 50%; }
+
+    footer { padding: 2rem 0 3rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+    @media print {
+      header, .cta { display: none !important; }
+      section { padding: .75rem 0; }
+      .card { break-inside: avoid; }
+    }
+  </style>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232563eb' d='M16 2l6 6-6 6-6-6 6-6zm0 16l6 6-6 6-6-6 6-6z'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nadeem Abdul",
+    "jobTitle": "Health Informatics / Data Analyst",
+    "address": {"@type":"PostalAddress","addressLocality":"Fairfax","addressRegion":"VA","postalCode":"22030","addressCountry":"US"},
+    "email": "mailto:abdulnadeem30394@gmail.com",
+    "telephone": "+17033500950",
+    "url": "",
+    "sameAs": ["http://www.linkedin.com/in/nadeem-abdul1430"]
+  }
+  </script>
+</head>
+<body>
+  <a href="#content" class="sr-only">Skip to content</a>
+  <header>
+    <div class="container">
+      <nav aria-label="Primary">
+        <div class="brand">Nadeem Abdul</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <section class="hero" aria-labelledby="intro">
+      <p class="kicker">Health Informatics · Data Analyst</p>
+      <h1 id="intro">Turning healthcare data into actionable insights</h1>
+      <p class="lead">Healthcare professional transitioning into health informatics with strong analytical skills in Python, SQL, and BI tools. Experienced with EMR/EHR systems (Epic, Cerner), HL7/FHIR interoperability, and revenue-cycle analytics. Committed to improving patient outcomes and operational efficiency through data-driven solutions.</p>
+      <div class="cta" role="group" aria-label="Primary actions">
+        <a class="btn primary" href="mailto:abdulnadeem30394@gmail.com" aria-label="Email Nadeem">📧 Email me</a>
+        <a class="btn" href="http://www.linkedin.com/in/nadeem-abdul1430" target="_blank" rel="noopener">in LinkedIn</a>
+        <a class="btn" href="Nadeem_Abdul_Resume.pdf" target="_blank" rel="noopener">⬇️ Download Résumé (PDF)</a>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About</h2>
+      <p class="muted">A healthcare professional with experience across clinical care, software engineering, and analytics. I specialize in health data management, clinical decision support, and interoperability. My goal is to streamline care delivery, strengthen data governance, and support better decisions with clear, trustworthy analytics.</p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 class="section-title" id="skills-title">Skills</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Programming & Data Analysis</h3>
+          <p class="muted">Python (Pandas, NumPy), R, SAS, Stata, MATLAB</p>
+          <h3>Databases & Querying</h3>
+          <p class="muted">SQL (T-SQL, MySQL, PostgreSQL, PL/SQL), Azure SQL, SQL Server, BigQuery, ETL pipelines, warehousing, performance tuning</p>
+        </div>
+        <div class="card">
+          <h3>Data Visualization & BI</h3>
+          <p class="muted">Tableau, Power BI, Looker, QlikView, SSRS, Excel, Matplotlib, Plotly</p>
+          <h3>Modeling & ML</h3>
+          <p class="muted">Regression, classification (SVM, Random Forest), clustering, time-series forecasting, predictive modeling</p>
+        </div>
+        <div class="card">
+          <h3>Healthcare Informatics</h3>
+          <p class="muted">EMR/EHR (Epic, Cerner, Meditech), HL7, FHIR, DICOM; SNOMED CT, UMLS, LOINC, ICD-10</p>
+          <h3>Governance & Compliance</h3>
+          <p class="muted">HIPAA, medical record auditing, coding & billing workflows, regulatory reporting, data governance</p>
+        </div>
+        <div class="card">
+          <h3>Financial & Contract Analytics</h3>
+          <p class="muted">Revenue cycle optimization, claims modeling, payer-contract performance</p>
+          <h3>Collaboration & Tools</h3>
+          <p class="muted">Agile/Scrum, stakeholder communication, Git/GitHub, JIRA, presentations & infographic design</p>
+        </div>
+        <div class="card">
+          <h3>Soft Skills</h3>
+          <p class="muted">Attention to detail, clear communication, organization, adaptability, time management</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Selected Projects</h2>
+      <div class="grid cols-2">
+        <article class="card" aria-labelledby="proj1-title">
+          <div class="badge">Jan 2025 – May 2025</div>
+          <h3 id="proj1-title">Data-Driven Strategies for Revenue Optimization & Telehealth</h3>
+          <p class="meta">Clinic analytics · Predictive modeling · Patient engagement</p>
+          <ul class="clean">
+            <li>Analyzed 4 years of clinic data; identified 47% of revenue delayed &gt; 91 days.</li>
+            <li>Built a forecasting model and proposed AI chatbot reminders to reduce no-shows by ~30%.</li>
+            <li>Designed digital strategies that improved reimbursement efficiency and cash flow.</li>
+          </ul>
+        </article>
+
+        <article class="card" aria-labelledby="proj2-title">
+          <div class="badge">Aug 2024 – Dec 2024</div>
+          <h3 id="proj2-title">AI Mental Health Chatbot – COMMON AI</h3>
+          <p class="meta">Python · NLP · DSM-5-based classification</p>
+          <ul class="clean">
+            <li>Achieved ~90% classification accuracy on triage categories.</li>
+            <li>Integrated sentiment analysis to flag critical responses and reduce triage time by ~60%.</li>
+          </ul>
+        </article>
+
+        <article class="card" aria-labelledby="proj3-title">
+          <div class="badge">Aug 2024 – Dec 2024</div>
+          <h3 id="proj3-title">Analysis of Missing Data on Antidepressant Use</h3>
+          <p class="meta">All of Us dataset · Logistic regression · Imputation</p>
+          <ul class="clean">
+            <li>Improved treatment prediction by ~35% using appropriate imputation strategies.</li>
+          </ul>
+        </article>
+
+        <article class="card" aria-labelledby="proj4-title">
+          <div class="badge">Aug 2024 – Dec 2024</div>
+          <h3 id="proj4-title">Feature-Based Classification of Cardiomegaly & Pleural Effusion</h3>
+          <p class="meta">MATLAB · Classical ML</p>
+          <ul class="clean">
+            <li>Reached ~87% diagnostic accuracy on chest X-ray features.</li>
+          </ul>
+        </article>
+
+        <article class="card" aria-labelledby="proj5-title">
+          <div class="badge">Oct 2023 – Dec 2023</div>
+          <h3 id="proj5-title">Tableau Healthcare Dashboard</h3>
+          <p class="meta">BI · Visualization</p>
+          <ul class="clean">
+            <li>Built dashboards for 100k+ rows of hospital data; cut reporting time by ~50%.</li>
+          </ul>
+        </article>
+
+        <article class="card" aria-labelledby="proj6-title">
+          <div class="badge">Nov 2023 – Dec 2023</div>
+          <h3 id="proj6-title">Python EV Market Trend Analysis</h3>
+          <p class="meta">Pandas · Plotly</p>
+          <ul class="clean">
+            <li>Analyzed global EV sales, revealing ~25% YoY growth trends.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 class="section-title" id="experience-title">Experience</h2>
+      <div class="timeline" aria-label="Work timeline">
+        <div class="item">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Data Analyst · Tazewell Orthopedic & Arthritis Clinic <span class="meta">(Jan 2025 – Jun 2025)</span></h3>
+          <ul class="clean">
+            <li>Identified revenue delays and underperforming services to prioritize operational fixes.</li>
+            <li>Delivered insights that supported ~15% revenue improvement via better patient–provider alignment.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Teaching Assistant · George Mason University <span class="meta">(Jan 2025 – May 2025)</span></h3>
+          <ul class="clean">
+            <li>Supported Health Information Systems & Health Data Mining courses.</li>
+            <li>Led review sessions and provided academic support to graduate students.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>General Duty Medical Officer · State Government, Visakhapatnam, India <span class="meta">(Aug 2020 – Oct 2021)</span></h3>
+          <ul class="clean">
+            <li>Deployed EMR systems, reducing manual errors by ~45% and increasing protocol compliance.</li>
+            <li>Analyzed COVID-19 data to improve emergency response times by ~20%.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Software Engineer · Prodatix Info Solutions PVT LTD <span class="meta">(Oct 2019 – Mar 2023)</span></h3>
+          <ul class="clean">
+            <li>Built data-driven applications in Python and classic ML to improve operations.</li>
+            <li>Developed Tableau dashboards and NLP tools to streamline decision-making.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="education-title">
+      <h2 class="section-title" id="education-title">Education</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Master of Science, Health Informatics <span class="meta">(GPA: 3.93/4.0)</span></h3>
+          <p class="muted">George Mason University, College of Public Health — Fairfax, VA</p>
+        </div>
+        <div class="card">
+          <h3>Bachelor of Dental Surgery <span class="meta">(GPA: 9.2/10)</span></h3>
+          <p class="muted">GITAM Dental College & Hospital — Visakhapatnam, India</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+      <div class="grid">
+        <div class="card">
+          <p><strong>Location:</strong> Fairfax, VA 22030</p>
+          <p><strong>Email:</strong> <a href="mailto:abdulnadeem30394@gmail.com">abdulnadeem30394@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+17033500950">+1 (703) 350-0950</a></p>
+          <p><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/nadeem-abdul1430" target="_blank" rel="noopener">linkedin.com/in/nadeem-abdul1430</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="muted">© <span id="year"></span> Nadeem Abdul. Built with semantic HTML &amp; vanilla CSS.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
